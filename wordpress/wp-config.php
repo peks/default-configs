@@ -125,7 +125,6 @@ define('WP_DEBUG_LOG', false);
 define('WP_DEBUG_DISPLAY', false);
 
 // This one is the killer :)
-define('WP_DEBUG', true);
 if (WP_DEBUG) {
   define('WP_DEBUG_LOG', true);
   define('WP_DEBUG_DISPLAY', false);
@@ -222,4 +221,6 @@ define('DISALLOW_FILE_EDIT',false);
 // Practically the same as above.
 define('DISALLOW_FILE_MODS',false);
 
+define('ABSPATH', dirname(__FILE__).'/');
+require_once(ABSPATH.'wp-settings.php');
 ?>
